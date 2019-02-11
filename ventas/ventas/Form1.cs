@@ -19,7 +19,7 @@ namespace ventas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("HOLA MUNDO");
+            MessageBox.Show("Puedo aceptar el fracaso, todos fracasan en algo. Pero no puedo aceptar no intentarlo...");
         }
     }
 }
