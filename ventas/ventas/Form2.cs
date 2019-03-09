@@ -17,15 +17,20 @@ namespace ventas
         {
             InitializeComponent();
 
-            var clientesBl = new ClientesBL();
-            listadeClientesBindingSource.DataSource = clientesBl.ListadeClientes;
-
-            var ciudadesBL = new CiudadBL();
-            listadeCiudadesBindingSource.DataSource = ciudadesBL.ListadeCiudades;
+            
             
              }
 
-        private void Form2_Load(object sender, EventArgs e)
+        public void cargarDatos(ClientesBL clientesBL, CiudadBL ciudadesBL)
+        {
+            
+            listadeClientesBindingSource.DataSource = clientesBL.ListadeClientes;
+            listadeCiudadesBindingSource.DataSource = ciudadesBL.ListadeCiudades;
+        }
+
+        
+
+        private void Clientes(object sender, EventArgs e)
         {
 
         }

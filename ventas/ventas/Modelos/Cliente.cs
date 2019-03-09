@@ -17,6 +17,12 @@ namespace ventas.Modelos
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
 
+        public Cliente()
+        {
+            Categoria = new Categoria(1, "Ciudad");
+            CategoriaId = Categoria.Id;
+        }
+
         public Cliente(int id, string nombre, int telefono, string ciudad, string direccion, Categoria categoria)
         {
             Id = id;

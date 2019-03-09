@@ -27,6 +27,8 @@ namespace ventas.Modelos
 
         public Productos()
         {
+            Categoria = new Categoria(1, "Laptops");
+            CategoriaId = Categoria.Id;
         }
     }
 }

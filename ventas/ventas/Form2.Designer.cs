@@ -43,14 +43,14 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listadeCategoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listadeClientesDataGridView = new System.Windows.Forms.DataGridView();
+            this.listadeCiudadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listadeClientesDataGridView = new System.Windows.Forms.DataGridView();
-            this.listadeCiudadesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ciudadLabel = new System.Windows.Forms.Label();
             direccionLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -109,6 +109,7 @@
             // 
             // listadeClientesBindingSource
             // 
+            this.listadeClientesBindingSource.AllowNew = true;
             this.listadeClientesBindingSource.DataSource = typeof(ventas.Modelos.Cliente);
             // 
             // ciudadTextBox
@@ -176,6 +177,34 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Categoria:";
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // listadeClientesDataGridView
+            // 
+            this.listadeClientesDataGridView.AutoGenerateColumns = false;
+            this.listadeClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listadeClientesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn7});
+            this.listadeClientesDataGridView.DataSource = this.listadeClientesBindingSource;
+            this.listadeClientesDataGridView.Location = new System.Drawing.Point(89, 261);
+            this.listadeClientesDataGridView.Name = "listadeClientesDataGridView";
+            this.listadeClientesDataGridView.RowTemplate.Height = 24;
+            this.listadeClientesDataGridView.Size = new System.Drawing.Size(717, 234);
+            this.listadeClientesDataGridView.TabIndex = 14;
+            // 
+            // listadeCiudadesBindingSource
+            // 
+            this.listadeCiudadesBindingSource.DataSource = typeof(ventas.Modelos.Ciudad);
+            // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "CategoriaId";
@@ -211,34 +240,6 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // listadeClientesDataGridView
-            // 
-            this.listadeClientesDataGridView.AutoGenerateColumns = false;
-            this.listadeClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listadeClientesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn7});
-            this.listadeClientesDataGridView.DataSource = this.listadeClientesBindingSource;
-            this.listadeClientesDataGridView.Location = new System.Drawing.Point(89, 261);
-            this.listadeClientesDataGridView.Name = "listadeClientesDataGridView";
-            this.listadeClientesDataGridView.RowTemplate.Height = 24;
-            this.listadeClientesDataGridView.Size = new System.Drawing.Size(717, 234);
-            this.listadeClientesDataGridView.TabIndex = 14;
-            // 
-            // listadeCiudadesBindingSource
-            // 
-            this.listadeCiudadesBindingSource.DataSource = typeof(ventas.Modelos.Ciudad);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -259,7 +260,7 @@
             this.Controls.Add(this.telefonoTextBox);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Load += new System.EventHandler(this.Clientes);
             ((System.ComponentModel.ISupportInitialize)(this.listadeClientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeCategoriasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listadeClientesDataGridView)).EndInit();
@@ -280,13 +281,13 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource listadeCategoriasBindingSource;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridView listadeClientesDataGridView;
         private System.Windows.Forms.BindingSource listadeCiudadesBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn7;
     }
 }
