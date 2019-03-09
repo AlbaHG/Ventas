@@ -86,6 +86,7 @@
     <None Include="Properties\DataSources\ventas.BL.CategoriasBL.datasource" />
     <None Include="Properties\DataSources\ventas.BL.CiudadBL.datasource" />
     <None Include="Properties\DataSources\ventas.BL.ClientesBL.datasource" />
+    <None Include="Properties\DataSources\ventas.BL.ProductosBL.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

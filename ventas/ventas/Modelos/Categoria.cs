@@ -10,7 +10,7 @@ namespace ventas.Modelos
     {
        
         public int Id { get; set; }
-        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
         //public string Nombre { get; set; }
         //public int Telefono { get; set; }
         //public string Ciudad { get; set; }
@@ -21,10 +21,10 @@ namespace ventas.Modelos
         //{
 
         //}
-       public Categoria(int id, string nombre)
+       public Categoria(int id, string descripcion)
         {
             Id = id;
-            Nombre = nombre;
+            Descripcion = descripcion;
             //Descripcion = descripcion;
             //Nombre = Nombre;
             //Telefono = telefono;
