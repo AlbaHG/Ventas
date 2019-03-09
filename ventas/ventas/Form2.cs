@@ -16,20 +16,21 @@ namespace ventas
         public Form2()
         {
             InitializeComponent();
-      
+             }
+        
+           
+
+            // private void Form2_Load(object sender, EventArgs e)
+
+
+            // private void listadeClientesBindingNavigator_RefreshItems(object sender, EventArgs e)
+            // {
+
+            //public void cargarDatos(ClientesBL clientesBL, CategoriasBL categoriaBL)
+
             
-                
-            
+        
 
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            var clientesBL = new ClientesBL();
-            listadeClientesBindingSource.DataSource = clientesBL.ListadeClientes;
-
-            var categoriasBL = new CategoriasBL();
-            listadeCategoriasBindingSource.DataSource = categoriasBL.ListadeCategorias;
-        }
     }
-}
+    }
+

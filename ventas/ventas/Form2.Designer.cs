@@ -151,6 +151,7 @@
             this.listadeClientesBindingNavigator.Size = new System.Drawing.Size(997, 27);
             this.listadeClientesBindingNavigator.TabIndex = 0;
             this.listadeClientesBindingNavigator.Text = "bindingNavigator1";
+            //this.listadeClientesBindingNavigator.RefreshItems += new System.EventHandler(this.listadeClientesBindingNavigator_RefreshItems);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -330,7 +331,7 @@
             this.listadeClientesDataGridView.Location = new System.Drawing.Point(89, 261);
             this.listadeClientesDataGridView.Name = "listadeClientesDataGridView";
             this.listadeClientesDataGridView.RowTemplate.Height = 24;
-            this.listadeClientesDataGridView.Size = new System.Drawing.Size(728, 234);
+            this.listadeClientesDataGridView.Size = new System.Drawing.Size(717, 234);
             this.listadeClientesDataGridView.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn1
@@ -395,7 +396,7 @@
             this.Controls.Add(this.listadeClientesBindingNavigator);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            //this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.listadeClientesBindingNavigator)).EndInit();
             this.listadeClientesBindingNavigator.ResumeLayout(false);
             this.listadeClientesBindingNavigator.PerformLayout();
