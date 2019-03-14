@@ -86,6 +86,7 @@
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
             this.facturaToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -128,19 +129,19 @@
             // porClienteToolStripMenuItem
             // 
             this.porClienteToolStripMenuItem.Name = "porClienteToolStripMenuItem";
-            this.porClienteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.porClienteToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.porClienteToolStripMenuItem.Text = "Por Cliente";
             // 
             // porProductoToolStripMenuItem
             // 
             this.porProductoToolStripMenuItem.Name = "porProductoToolStripMenuItem";
-            this.porProductoToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.porProductoToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.porProductoToolStripMenuItem.Text = "Por Producto";
             // 
             // totalesToolStripMenuItem
             // 
             this.totalesToolStripMenuItem.Name = "totalesToolStripMenuItem";
-            this.totalesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.totalesToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.totalesToolStripMenuItem.Text = "Totales";
             // 
             // Menu

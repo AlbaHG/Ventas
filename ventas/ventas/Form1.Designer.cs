@@ -71,7 +71,7 @@
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(32, 90);
+            descripcionLabel.Location = new System.Drawing.Point(32, 94);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(86, 17);
             descripcionLabel.TabIndex = 3;
@@ -80,7 +80,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(32, 43);
+            idLabel.Location = new System.Drawing.Point(33, 59);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(23, 17);
             idLabel.TabIndex = 5;
@@ -89,7 +89,7 @@
             // precioLabel
             // 
             precioLabel.AutoSize = true;
-            precioLabel.Location = new System.Drawing.Point(32, 140);
+            precioLabel.Location = new System.Drawing.Point(32, 126);
             precioLabel.Name = "precioLabel";
             precioLabel.Size = new System.Drawing.Size(52, 17);
             precioLabel.TabIndex = 7;
@@ -226,25 +226,25 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeProductosBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(126, 87);
+            this.descripcionTextBox.Location = new System.Drawing.Point(126, 91);
             this.descripcionTextBox.Name = "descripcionTextBox";
-            this.descripcionTextBox.Size = new System.Drawing.Size(100, 22);
+            this.descripcionTextBox.Size = new System.Drawing.Size(154, 22);
             this.descripcionTextBox.TabIndex = 4;
             // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeProductosBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(126, 43);
+            this.idTextBox.Location = new System.Drawing.Point(127, 59);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.idTextBox.Size = new System.Drawing.Size(154, 22);
             this.idTextBox.TabIndex = 6;
             // 
             // precioTextBox
             // 
             this.precioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeProductosBindingSource, "Precio", true));
-            this.precioTextBox.Location = new System.Drawing.Point(126, 137);
+            this.precioTextBox.Location = new System.Drawing.Point(126, 123);
             this.precioTextBox.Name = "precioTextBox";
-            this.precioTextBox.Size = new System.Drawing.Size(100, 22);
+            this.precioTextBox.Size = new System.Drawing.Size(154, 22);
             this.precioTextBox.TabIndex = 8;
             // 
             // comboBox1
@@ -253,9 +253,9 @@
             this.comboBox1.DataSource = this.listadeCategoriasBindingSource;
             this.comboBox1.DisplayMember = "Nombre";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 187);
+            this.comboBox1.Location = new System.Drawing.Point(126, 158);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(154, 24);
             this.comboBox1.TabIndex = 9;
             this.comboBox1.ValueMember = "Id";
             // 
@@ -266,7 +266,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 194);
+            this.label1.Location = new System.Drawing.Point(32, 165);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 10;
@@ -282,10 +282,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn5});
             this.listadeProductosDataGridView.DataSource = this.listadeProductosBindingSource;
-            this.listadeProductosDataGridView.Location = new System.Drawing.Point(127, 259);
+            this.listadeProductosDataGridView.Location = new System.Drawing.Point(71, 237);
             this.listadeProductosDataGridView.Name = "listadeProductosDataGridView";
             this.listadeProductosDataGridView.RowTemplate.Height = 24;
-            this.listadeProductosDataGridView.Size = new System.Drawing.Size(597, 220);
+            this.listadeProductosDataGridView.Size = new System.Drawing.Size(461, 136);
             this.listadeProductosDataGridView.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1

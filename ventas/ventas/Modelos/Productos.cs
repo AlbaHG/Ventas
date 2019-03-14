@@ -15,7 +15,13 @@ namespace ventas.Modelos
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
 
-        public Productos(int id, string descripcion, double precio, Categoria categoria)
+         public Productos()
+        {
+            Categoria = new Categoria(1, "Laptops");
+            CategoriaId = Categoria.Id;
+         }
+
+         public Productos(int id, string descripcion, double precio, Categoria categoria)
         {
             Id = id;
             Descripcion = descripcion;
@@ -23,12 +29,6 @@ namespace ventas.Modelos
             Categoria = categoria;
             CategoriaId = categoria.Id;
 
-        }
-
-        public Productos()
-        {
-            Categoria = new Categoria(1, "Laptops");
-            CategoriaId = Categoria.Id;
         }
     }
 }
