@@ -17,8 +17,7 @@ namespace ventas.BL
             ListadeProductos = new BindingList<Productos>();
             CrearDatosdePrueba();
         }
-
-        public double ObtenerPrecio(int id)
+             public double ObtenerPrecio(int id)
         {
             double precio = 0;
 
@@ -33,9 +32,10 @@ namespace ventas.BL
             return precio;
         }
 
-        private void CrearDatosdePrueba()
+    
+    private void CrearDatosdePrueba()
         {
-            var categoria1 = new Categoria(1, "Laptos");
+            var categoria1 = new Categoria(1, "Laptops");
             var categoria2 = new Categoria(2, "Accesorios");
 
             var producto1 = new Productos(1, "Laptop Dell", 15000, categoria1);

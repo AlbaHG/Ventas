@@ -8,14 +8,13 @@ using ventas.Modelos;
 
 namespace ventas.BL
 {
-
-    public class FacturaBL
+    public class ComprasBL
     {
-        public BindingList<Factura> ListadeFacturas { get; set; }
+        public BindingList<Compras> ListadeCompras { get; set; }
 
-        public FacturaBL()
+        public ComprasBL()
         {
-            ListadeFacturas = new BindingList<Factura>();
+            ListadeCompras = new BindingList<Compras>();
         }
     }
 }

@@ -18,7 +18,12 @@ namespace ventas
         ClientesBL _clientesBL;
         CiudadBL _ciudadesBL;
         FacturaBL _facturaBL;
-    
+
+        //InventarioBL _inventarioBL;
+       // ComprasBL _comprasBL;
+        //ProveedoresBL _proveedoresBL;
+        
+        
         public Menu()
         {
             InitializeComponent();
@@ -28,6 +33,13 @@ namespace ventas
             _clientesBL = new ClientesBL();
             _ciudadesBL = new CiudadBL();
             _facturaBL = new FacturaBL();
+
+           // _inventarioBL = new InventarioBL();
+           // _comprasBL = new ComprasBL();
+          //  _proveedoresBL = new ProveedoresBL();
+           
+           
+
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,12 +61,15 @@ namespace ventas
 
         private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formFactura = new Form3();
-            formFactura.MdiParent = this;
+        var formFactura = new Form3();
+        formFactura.MdiParent = this;
 
-            formFactura.cargarDatos(_facturaBL, _clientesBL, _productosBL);
+        formFactura.cargarDatos(_facturaBL, _clientesBL, _productosBL);
 
-            formFactura.Show();
+        formFactura.Show();
+
+             
+      
         }
     }
 }

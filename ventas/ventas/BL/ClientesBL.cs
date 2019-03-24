@@ -16,7 +16,9 @@ namespace ventas.BL
         {
             ListadeClientes = new BindingList<Cliente>();
             CrearDatosdePrueba();
+
         }
+
         private void CrearDatosdePrueba()
         {
             var categoria1 = new Categoria(1, "Nombres");
