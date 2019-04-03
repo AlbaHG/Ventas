@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 95);
+            this.label1.Location = new System.Drawing.Point(24, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 17);
             this.label1.TabIndex = 0;
@@ -49,16 +49,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 98);
+            this.textBox1.Location = new System.Drawing.Point(111, 73);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(202, 22);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(70, 270);
+            this.button1.Location = new System.Drawing.Point(33, 296);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 36);
+            this.button1.Size = new System.Drawing.Size(139, 54);
             this.button1.TabIndex = 3;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(117, 147);
+            this.textBox2.Location = new System.Drawing.Point(111, 122);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(202, 22);
@@ -75,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 150);
+            this.label2.Location = new System.Drawing.Point(24, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 3;
@@ -83,9 +83,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(273, 270);
+            this.button2.Location = new System.Drawing.Point(281, 296);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 36);
+            this.button2.Size = new System.Drawing.Size(136, 54);
             this.button2.TabIndex = 4;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::ventas.Properties.Resources.tmp562099002053492736;
-            this.pictureBox1.Location = new System.Drawing.Point(350, 15);
+            this.pictureBox1.Location = new System.Drawing.Point(350, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(257, 191);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
