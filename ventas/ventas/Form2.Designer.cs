@@ -65,7 +65,7 @@
             // ciudadLabel
             // 
             ciudadLabel.AutoSize = true;
-            ciudadLabel.Location = new System.Drawing.Point(86, 159);
+            ciudadLabel.Location = new System.Drawing.Point(76, 94);
             ciudadLabel.Name = "ciudadLabel";
             ciudadLabel.Size = new System.Drawing.Size(56, 17);
             ciudadLabel.TabIndex = 3;
@@ -74,7 +74,7 @@
             // direccionLabel
             // 
             direccionLabel.AutoSize = true;
-            direccionLabel.Location = new System.Drawing.Point(86, 132);
+            direccionLabel.Location = new System.Drawing.Point(76, 119);
             direccionLabel.Name = "direccionLabel";
             direccionLabel.Size = new System.Drawing.Size(71, 17);
             direccionLabel.TabIndex = 5;
@@ -83,7 +83,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(86, 77);
+            idLabel.Location = new System.Drawing.Point(76, 38);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(23, 17);
             idLabel.TabIndex = 7;
@@ -92,7 +92,7 @@
             // nombreLabel
             // 
             nombreLabel.AutoSize = true;
-            nombreLabel.Location = new System.Drawing.Point(86, 105);
+            nombreLabel.Location = new System.Drawing.Point(76, 66);
             nombreLabel.Name = "nombreLabel";
             nombreLabel.Size = new System.Drawing.Size(62, 17);
             nombreLabel.TabIndex = 9;
@@ -101,7 +101,7 @@
             // telefonoLabel
             // 
             telefonoLabel.AutoSize = true;
-            telefonoLabel.Location = new System.Drawing.Point(86, 187);
+            telefonoLabel.Location = new System.Drawing.Point(76, 148);
             telefonoLabel.Name = "telefonoLabel";
             telefonoLabel.Size = new System.Drawing.Size(68, 17);
             telefonoLabel.TabIndex = 11;
@@ -115,41 +115,41 @@
             // ciudadTextBox
             // 
             this.ciudadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeClientesBindingSource, "Ciudad", true));
-            this.ciudadTextBox.Location = new System.Drawing.Point(180, 156);
+            this.ciudadTextBox.Location = new System.Drawing.Point(170, 92);
             this.ciudadTextBox.Name = "ciudadTextBox";
-            this.ciudadTextBox.Size = new System.Drawing.Size(140, 22);
+            this.ciudadTextBox.Size = new System.Drawing.Size(185, 22);
             this.ciudadTextBox.TabIndex = 4;
             // 
             // direccionTextBox
             // 
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeClientesBindingSource, "Direccion", true));
-            this.direccionTextBox.Location = new System.Drawing.Point(180, 129);
+            this.direccionTextBox.Location = new System.Drawing.Point(170, 117);
             this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.Size = new System.Drawing.Size(140, 22);
+            this.direccionTextBox.Size = new System.Drawing.Size(185, 22);
             this.direccionTextBox.TabIndex = 6;
             // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeClientesBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(180, 74);
+            this.idTextBox.Location = new System.Drawing.Point(170, 35);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(140, 22);
+            this.idTextBox.Size = new System.Drawing.Size(185, 22);
             this.idTextBox.TabIndex = 8;
             // 
             // nombreTextBox
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeClientesBindingSource, "Nombre", true));
-            this.nombreTextBox.Location = new System.Drawing.Point(180, 102);
+            this.nombreTextBox.Location = new System.Drawing.Point(170, 64);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(140, 22);
+            this.nombreTextBox.Size = new System.Drawing.Size(185, 22);
             this.nombreTextBox.TabIndex = 10;
             // 
             // telefonoTextBox
             // 
             this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeClientesBindingSource, "Telefono", true));
-            this.telefonoTextBox.Location = new System.Drawing.Point(180, 184);
+            this.telefonoTextBox.Location = new System.Drawing.Point(170, 145);
             this.telefonoTextBox.Name = "telefonoTextBox";
-            this.telefonoTextBox.Size = new System.Drawing.Size(140, 22);
+            this.telefonoTextBox.Size = new System.Drawing.Size(185, 22);
             this.telefonoTextBox.TabIndex = 12;
             // 
             // comboBox1
@@ -158,9 +158,9 @@
             this.comboBox1.DataSource = this.listadeCategoriasBindingSource;
             this.comboBox1.DisplayMember = "Descripcion";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 218);
+            this.comboBox1.Location = new System.Drawing.Point(170, 173);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 24);
+            this.comboBox1.Size = new System.Drawing.Size(185, 24);
             this.comboBox1.TabIndex = 13;
             this.comboBox1.ValueMember = "Id";
             // 
@@ -171,7 +171,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 225);
+            this.label1.Location = new System.Drawing.Point(71, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 14;
@@ -198,7 +198,7 @@
             this.listadeClientesDataGridView.Location = new System.Drawing.Point(89, 261);
             this.listadeClientesDataGridView.Name = "listadeClientesDataGridView";
             this.listadeClientesDataGridView.RowTemplate.Height = 24;
-            this.listadeClientesDataGridView.Size = new System.Drawing.Size(717, 234);
+            this.listadeClientesDataGridView.Size = new System.Drawing.Size(701, 206);
             this.listadeClientesDataGridView.TabIndex = 14;
             // 
             // dataGridViewTextBoxColumn2
@@ -244,7 +244,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 548);
+            this.ClientSize = new System.Drawing.Size(862, 548);
             this.Controls.Add(this.listadeClientesDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);

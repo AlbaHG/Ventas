@@ -86,7 +86,7 @@
             // activoLabel
             // 
             activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(9, 162);
+            activoLabel.Location = new System.Drawing.Point(20, 159);
             activoLabel.Name = "activoLabel";
             activoLabel.Size = new System.Drawing.Size(50, 17);
             activoLabel.TabIndex = 1;
@@ -95,7 +95,7 @@
             // fechaLabel
             // 
             fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(9, 114);
+            fechaLabel.Location = new System.Drawing.Point(20, 119);
             fechaLabel.Name = "fechaLabel";
             fechaLabel.Size = new System.Drawing.Size(51, 17);
             fechaLabel.TabIndex = 3;
@@ -104,7 +104,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(9, 42);
+            idLabel.Location = new System.Drawing.Point(20, 57);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(23, 17);
             idLabel.TabIndex = 5;
@@ -113,7 +113,7 @@
             // impuestoLabel
             // 
             impuestoLabel.AutoSize = true;
-            impuestoLabel.Location = new System.Drawing.Point(725, 477);
+            impuestoLabel.Location = new System.Drawing.Point(482, 440);
             impuestoLabel.Name = "impuestoLabel";
             impuestoLabel.Size = new System.Drawing.Size(69, 17);
             impuestoLabel.TabIndex = 7;
@@ -122,7 +122,7 @@
             // proveedoresIdLabel
             // 
             proveedoresIdLabel.AutoSize = true;
-            proveedoresIdLabel.Location = new System.Drawing.Point(9, 70);
+            proveedoresIdLabel.Location = new System.Drawing.Point(20, 85);
             proveedoresIdLabel.Name = "proveedoresIdLabel";
             proveedoresIdLabel.Size = new System.Drawing.Size(93, 17);
             proveedoresIdLabel.TabIndex = 9;
@@ -131,7 +131,7 @@
             // subtotalLabel
             // 
             subtotalLabel.AutoSize = true;
-            subtotalLabel.Location = new System.Drawing.Point(725, 412);
+            subtotalLabel.Location = new System.Drawing.Point(482, 384);
             subtotalLabel.Name = "subtotalLabel";
             subtotalLabel.Size = new System.Drawing.Size(64, 17);
             subtotalLabel.TabIndex = 11;
@@ -140,7 +140,7 @@
             // totalLabel
             // 
             totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(725, 440);
+            totalLabel.Location = new System.Drawing.Point(482, 412);
             totalLabel.Name = "totalLabel";
             totalLabel.Size = new System.Drawing.Size(44, 17);
             totalLabel.TabIndex = 13;
@@ -177,7 +177,7 @@
             this.listadeComprasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listadeComprasBindingNavigator.Name = "listadeComprasBindingNavigator";
             this.listadeComprasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listadeComprasBindingNavigator.Size = new System.Drawing.Size(1039, 27);
+            this.listadeComprasBindingNavigator.Size = new System.Drawing.Size(818, 27);
             this.listadeComprasBindingNavigator.TabIndex = 0;
             this.listadeComprasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -277,7 +277,7 @@
             // activoCheckBox
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listadeComprasBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(123, 157);
+            this.activoCheckBox.Location = new System.Drawing.Point(134, 154);
             this.activoCheckBox.Name = "activoCheckBox";
             this.activoCheckBox.Size = new System.Drawing.Size(200, 24);
             this.activoCheckBox.TabIndex = 2;
@@ -287,7 +287,7 @@
             // fechaDateTimePicker
             // 
             this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.listadeComprasBindingSource, "Fecha", true));
-            this.fechaDateTimePicker.Location = new System.Drawing.Point(123, 110);
+            this.fechaDateTimePicker.Location = new System.Drawing.Point(134, 115);
             this.fechaDateTimePicker.Name = "fechaDateTimePicker";
             this.fechaDateTimePicker.Size = new System.Drawing.Size(200, 22);
             this.fechaDateTimePicker.TabIndex = 4;
@@ -295,7 +295,7 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(123, 39);
+            this.idTextBox.Location = new System.Drawing.Point(134, 54);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(200, 22);
             this.idTextBox.TabIndex = 6;
@@ -303,7 +303,7 @@
             // impuestoTextBox
             // 
             this.impuestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Impuesto", true));
-            this.impuestoTextBox.Location = new System.Drawing.Point(839, 474);
+            this.impuestoTextBox.Location = new System.Drawing.Point(596, 437);
             this.impuestoTextBox.Name = "impuestoTextBox";
             this.impuestoTextBox.Size = new System.Drawing.Size(200, 22);
             this.impuestoTextBox.TabIndex = 8;
@@ -311,7 +311,7 @@
             // subtotalTextBox
             // 
             this.subtotalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Subtotal", true));
-            this.subtotalTextBox.Location = new System.Drawing.Point(839, 409);
+            this.subtotalTextBox.Location = new System.Drawing.Point(596, 381);
             this.subtotalTextBox.Name = "subtotalTextBox";
             this.subtotalTextBox.Size = new System.Drawing.Size(200, 22);
             this.subtotalTextBox.TabIndex = 12;
@@ -319,7 +319,7 @@
             // totalTextBox
             // 
             this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(839, 437);
+            this.totalTextBox.Location = new System.Drawing.Point(596, 409);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.Size = new System.Drawing.Size(200, 22);
             this.totalTextBox.TabIndex = 14;
@@ -330,7 +330,7 @@
             this.comboBox1.DataSource = this.listadeProveedoresBindingSource;
             this.comboBox1.DisplayMember = "Nombre";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(123, 70);
+            this.comboBox1.Location = new System.Drawing.Point(134, 85);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 24);
             this.comboBox1.TabIndex = 15;
@@ -356,10 +356,10 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.comprasDetalleDataGridView.DataSource = this.comprasDetalleBindingSource;
-            this.comprasDetalleDataGridView.Location = new System.Drawing.Point(353, 114);
+            this.comprasDetalleDataGridView.Location = new System.Drawing.Point(134, 189);
             this.comprasDetalleDataGridView.Name = "comprasDetalleDataGridView";
             this.comprasDetalleDataGridView.RowTemplate.Height = 24;
-            this.comprasDetalleDataGridView.Size = new System.Drawing.Size(606, 220);
+            this.comprasDetalleDataGridView.Size = new System.Drawing.Size(662, 179);
             this.comprasDetalleDataGridView.TabIndex = 15;
             this.comprasDetalleDataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.comprasDetalleDataGridView_CellEndEdit);
             // 
@@ -406,7 +406,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 493);
+            this.ClientSize = new System.Drawing.Size(818, 465);
             this.Controls.Add(this.comprasDetalleDataGridView);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(activoLabel);

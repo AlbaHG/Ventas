@@ -20,6 +20,7 @@ namespace ventas
         FacturaBL _facturaBL;
         ComprasBL _comprasBL;
         ProveedoresBL _proveedoresBL;
+        UsuariosBL _usuariosBL;
        
         
         
@@ -34,9 +35,9 @@ namespace ventas
             _facturaBL = new FacturaBL();
             _proveedoresBL = new ProveedoresBL();
             _comprasBL = new ComprasBL();
+            _usuariosBL = new UsuariosBL();
             
-           
-           
+                    
 
         }
 
@@ -83,6 +84,23 @@ namespace ventas
 
             formCompras.cargarDatos(_comprasBL, _proveedoresBL, _productosBL);
             formCompras.Show();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            var login = new Login();
+            login.CargarDatos(_usuariosBL);
+
+            login.ShowDialog();
+
+            productosToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerProductos;
+            facturaToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerFacturas;
+            clientesToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerClientes;
+
+            proveedoresToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerProveedores;
+            comprasToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerCompras;
+
+            reportesToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerReportes;
         }
     }
 }

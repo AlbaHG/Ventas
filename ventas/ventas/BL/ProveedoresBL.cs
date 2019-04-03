@@ -22,9 +22,9 @@ namespace ventas.BL
 
         public void CrearDatosdePrueba()
         {
-            var proveedores1 = new Proveedores(111, "Mario", 89764532);
+            var proveedores1 = new Proveedores(111, "Fernando", 89764532);
             var proveedores2 = new Proveedores(112, "Jorge", 7664362);
-            var proveedores3 = new Proveedores(113, "Bily", 89764534);
+            var proveedores3 = new Proveedores(113, "Carlos", 89764534);
 
 
             ListadeProveedores.Add(proveedores1);
