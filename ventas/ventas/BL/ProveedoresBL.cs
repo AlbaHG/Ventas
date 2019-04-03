@@ -8,29 +8,28 @@ using ventas.Modelos;
 
 namespace ventas.BL
 {
-    public class ProveedoresBL
+   public  class ProveedoresBL
     {
         public BindingList<Proveedores> ListadeProveedores { get; set; }
+
 
         public ProveedoresBL()
         {
             ListadeProveedores = new BindingList<Proveedores>();
             CrearDatosdePrueba();
-
         }
-              
-        private void CrearDatosdePrueba()
+
+
+        public void CrearDatosdePrueba()
         {
-            var categoria1 = new Categoria(1, "Nombres");
-            var categoria2 = new Categoria(2, "Ciudades");
+            var proveedores1 = new Proveedores(111, "Mario", 89764532);
+            var proveedores2 = new Proveedores(112, "Jorge", 7664362);
+            var proveedores3 = new Proveedores(113, "Bily", 89764534);
 
-            var proveedor1 = new Proveedores(123, "Sycom", 99473142, "Tijuana", "Tijuana, Mexico", categoria1);
-            var proveedor2 = new Proveedores(222, "Office", 99339944, "SPS", "SPS, Honduras", categoria2);
-            var proveedor3 = new Proveedores(333, "Indu", 99112233, "Guatemala", "Guatemala", categoria2);
 
-            ListadeProveedores.Add(proveedor1);
-            ListadeProveedores.Add(proveedor2);
-            ListadeProveedores.Add(proveedor3);
+            ListadeProveedores.Add(proveedores1);
+            ListadeProveedores.Add(proveedores2);
+            ListadeProveedores.Add(proveedores3);
         }
-     }
- }
+    }
+}

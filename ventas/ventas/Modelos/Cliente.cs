@@ -19,7 +19,7 @@ namespace ventas.Modelos
 
         public Cliente()
         {
-            Categoria = new Categoria(1, "Ciudad");
+            Categoria = new Categoria(1, "Roma");
             CategoriaId = Categoria.Id;
         }
 

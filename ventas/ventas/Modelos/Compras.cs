@@ -33,12 +33,12 @@ namespace ventas.Modelos
 
         public void CalcularTotalCompras()
         {
-            var inventarioBL = new InventarioBL();
+            var productosBL = new ProductosBL();
 
             double subtotal = 0;
             foreach (var detalle in ComprasDetalle)
             {
-                var costo = inventarioBL.ObtenerCosto(detalle.InventarioId);
+                var costo = productosBL.ObtenerCosto(detalle.ProductoId);
 
                 subtotal = subtotal + detalle.CalcularTotalDetalle(costo);
             }
@@ -54,8 +54,8 @@ namespace ventas.Modelos
     {
         public int Id { get; set; }
 
-        public int InventarioId { get; set; }
-        public Inventario Inventario { get; set; }
+        public int ProductoId { get; set; }
+        public Productos productos { get; set; }
 
         public int Cantidad { get; set; }
         public double Costo { get; set; }
@@ -64,7 +64,7 @@ namespace ventas.Modelos
         public ComprasDetalle()
         {
             Cantidad = 1;
-            InventarioId = 1;
+            ProductoId = 1;
         }
         public double CalcularTotalDetalle(double costo)
         {

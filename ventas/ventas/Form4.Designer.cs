@@ -29,133 +29,52 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label activoLabel;
-            System.Windows.Forms.Label fechaLabel;
-            System.Windows.Forms.Label idLabel;
-            System.Windows.Forms.Label impuestoLabel;
-            System.Windows.Forms.Label proveedoresIdLabel;
-            System.Windows.Forms.Label subtotalLabel;
-            System.Windows.Forms.Label totalLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            this.listadeComprasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.listadeComprasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            System.Windows.Forms.Label idLabel;
+            System.Windows.Forms.Label nombreLabel;
+            System.Windows.Forms.Label telefonoLabel;
+            this.listadeProveedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listadeProveedoresBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.listadeComprasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.activoCheckBox = new System.Windows.Forms.CheckBox();
-            this.fechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.listadeProveedoresBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idTextBox = new System.Windows.Forms.TextBox();
-            this.impuestoTextBox = new System.Windows.Forms.TextBox();
-            this.subtotalTextBox = new System.Windows.Forms.TextBox();
-            this.totalTextBox = new System.Windows.Forms.TextBox();
-            this.comprasDetalleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listadeProductosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listadeProveedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comprasDetalleDataGridView = new System.Windows.Forms.DataGridView();
+            this.nombreTextBox = new System.Windows.Forms.TextBox();
+            this.telefonoTextBox = new System.Windows.Forms.TextBox();
+            this.listadeProveedoresDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.listadeInventarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            activoLabel = new System.Windows.Forms.Label();
-            fechaLabel = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             idLabel = new System.Windows.Forms.Label();
-            impuestoLabel = new System.Windows.Forms.Label();
-            proveedoresIdLabel = new System.Windows.Forms.Label();
-            subtotalLabel = new System.Windows.Forms.Label();
-            totalLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeComprasBindingNavigator)).BeginInit();
-            this.listadeComprasBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeComprasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasDetalleBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeProductosBindingSource)).BeginInit();
+            nombreLabel = new System.Windows.Forms.Label();
+            telefonoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasDetalleDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeInventarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresBindingNavigator)).BeginInit();
+            this.listadeProveedoresBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // activoLabel
+            // listadeProveedoresBindingSource
             // 
-            activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(52, 146);
-            activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(50, 17);
-            activoLabel.TabIndex = 1;
-            activoLabel.Text = "Activo:";
+            this.listadeProveedoresBindingSource.DataSource = typeof(ventas.Modelos.Proveedores);
             // 
-            // fechaLabel
+            // listadeProveedoresBindingNavigator
             // 
-            fechaLabel.AutoSize = true;
-            fechaLabel.Location = new System.Drawing.Point(52, 117);
-            fechaLabel.Name = "fechaLabel";
-            fechaLabel.Size = new System.Drawing.Size(51, 17);
-            fechaLabel.TabIndex = 3;
-            fechaLabel.Text = "Fecha:";
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(52, 60);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(23, 17);
-            idLabel.TabIndex = 5;
-            idLabel.Text = "Id:";
-            // 
-            // impuestoLabel
-            // 
-            impuestoLabel.AutoSize = true;
-            impuestoLabel.Location = new System.Drawing.Point(392, 435);
-            impuestoLabel.Name = "impuestoLabel";
-            impuestoLabel.Size = new System.Drawing.Size(69, 17);
-            impuestoLabel.TabIndex = 7;
-            impuestoLabel.Text = "Impuesto:";
-            // 
-            // proveedoresIdLabel
-            // 
-            proveedoresIdLabel.AutoSize = true;
-            proveedoresIdLabel.Location = new System.Drawing.Point(52, 88);
-            proveedoresIdLabel.Name = "proveedoresIdLabel";
-            proveedoresIdLabel.Size = new System.Drawing.Size(93, 17);
-            proveedoresIdLabel.TabIndex = 9;
-            proveedoresIdLabel.Text = "Proveedores:";
-            // 
-            // subtotalLabel
-            // 
-            subtotalLabel.AutoSize = true;
-            subtotalLabel.Location = new System.Drawing.Point(392, 408);
-            subtotalLabel.Name = "subtotalLabel";
-            subtotalLabel.Size = new System.Drawing.Size(64, 17);
-            subtotalLabel.TabIndex = 11;
-            subtotalLabel.Text = "Subtotal:";
-            // 
-            // totalLabel
-            // 
-            totalLabel.AutoSize = true;
-            totalLabel.Location = new System.Drawing.Point(392, 464);
-            totalLabel.Name = "totalLabel";
-            totalLabel.Size = new System.Drawing.Size(44, 17);
-            totalLabel.TabIndex = 13;
-            totalLabel.Text = "Total:";
-            // 
-            // listadeComprasBindingNavigator
-            // 
-            this.listadeComprasBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.listadeComprasBindingNavigator.BindingSource = this.listadeComprasBindingSource;
-            this.listadeComprasBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.listadeComprasBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.listadeComprasBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.listadeComprasBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listadeProveedoresBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.listadeProveedoresBindingNavigator.BindingSource = this.listadeProveedoresBindingSource;
+            this.listadeProveedoresBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.listadeProveedoresBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.listadeProveedoresBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.listadeProveedoresBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -167,46 +86,17 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.listadeComprasBindingNavigatorSaveItem});
-            this.listadeComprasBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.listadeComprasBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.listadeComprasBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.listadeComprasBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.listadeComprasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.listadeComprasBindingNavigator.Name = "listadeComprasBindingNavigator";
-            this.listadeComprasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listadeComprasBindingNavigator.Size = new System.Drawing.Size(1006, 27);
-            this.listadeComprasBindingNavigator.TabIndex = 0;
-            this.listadeComprasBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // listadeComprasBindingSource
-            // 
-            this.listadeComprasBindingSource.DataSource = typeof(ventas.Modelos.Compras);
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            this.listadeProveedoresBindingNavigatorSaveItem});
+            this.listadeProveedoresBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.listadeProveedoresBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.listadeProveedoresBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.listadeProveedoresBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.listadeProveedoresBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.listadeProveedoresBindingNavigator.Name = "listadeProveedoresBindingNavigator";
+            this.listadeProveedoresBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.listadeProveedoresBindingNavigator.Size = new System.Drawing.Size(861, 27);
+            this.listadeProveedoresBindingNavigator.TabIndex = 0;
+            this.listadeProveedoresBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -240,9 +130,16 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -265,110 +162,101 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // listadeComprasBindingNavigatorSaveItem
+            // bindingNavigatorAddNewItem
             // 
-            this.listadeComprasBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.listadeComprasBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("listadeComprasBindingNavigatorSaveItem.Image")));
-            this.listadeComprasBindingNavigatorSaveItem.Name = "listadeComprasBindingNavigatorSaveItem";
-            this.listadeComprasBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.listadeComprasBindingNavigatorSaveItem.Text = "Guardar datos";
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
             // 
-            // activoCheckBox
+            // bindingNavigatorDeleteItem
             // 
-            this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listadeComprasBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(166, 141);
-            this.activoCheckBox.Name = "activoCheckBox";
-            this.activoCheckBox.Size = new System.Drawing.Size(200, 24);
-            this.activoCheckBox.TabIndex = 2;
-            this.activoCheckBox.Text = "checkBox1";
-            this.activoCheckBox.UseVisualStyleBackColor = true;
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
             // 
-            // fechaDateTimePicker
+            // listadeProveedoresBindingNavigatorSaveItem
             // 
-            this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.listadeComprasBindingSource, "Fecha", true));
-            this.fechaDateTimePicker.Location = new System.Drawing.Point(166, 113);
-            this.fechaDateTimePicker.Name = "fechaDateTimePicker";
-            this.fechaDateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.fechaDateTimePicker.TabIndex = 4;
+            this.listadeProveedoresBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.listadeProveedoresBindingNavigatorSaveItem.Enabled = false;
+            this.listadeProveedoresBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("listadeProveedoresBindingNavigatorSaveItem.Image")));
+            this.listadeProveedoresBindingNavigatorSaveItem.Name = "listadeProveedoresBindingNavigatorSaveItem";
+            this.listadeProveedoresBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
+            this.listadeProveedoresBindingNavigatorSaveItem.Text = "Guardar datos";
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(26, 54);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(23, 17);
+            idLabel.TabIndex = 1;
+            idLabel.Text = "Id:";
             // 
             // idTextBox
             // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(166, 57);
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeProveedoresBindingSource, "Id", true));
+            this.idTextBox.Location = new System.Drawing.Point(100, 51);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(200, 22);
-            this.idTextBox.TabIndex = 6;
+            this.idTextBox.Size = new System.Drawing.Size(100, 22);
+            this.idTextBox.TabIndex = 2;
             // 
-            // impuestoTextBox
+            // nombreLabel
             // 
-            this.impuestoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Impuesto", true));
-            this.impuestoTextBox.Location = new System.Drawing.Point(506, 432);
-            this.impuestoTextBox.Name = "impuestoTextBox";
-            this.impuestoTextBox.Size = new System.Drawing.Size(200, 22);
-            this.impuestoTextBox.TabIndex = 8;
+            nombreLabel.AutoSize = true;
+            nombreLabel.Location = new System.Drawing.Point(26, 82);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(62, 17);
+            nombreLabel.TabIndex = 3;
+            nombreLabel.Text = "Nombre:";
             // 
-            // subtotalTextBox
+            // nombreTextBox
             // 
-            this.subtotalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Subtotal", true));
-            this.subtotalTextBox.Location = new System.Drawing.Point(506, 405);
-            this.subtotalTextBox.Name = "subtotalTextBox";
-            this.subtotalTextBox.Size = new System.Drawing.Size(200, 22);
-            this.subtotalTextBox.TabIndex = 12;
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeProveedoresBindingSource, "Nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(100, 79);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(100, 22);
+            this.nombreTextBox.TabIndex = 4;
             // 
-            // totalTextBox
+            // telefonoLabel
             // 
-            this.totalTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeComprasBindingSource, "Total", true));
-            this.totalTextBox.Location = new System.Drawing.Point(506, 461);
-            this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(200, 22);
-            this.totalTextBox.TabIndex = 14;
+            telefonoLabel.AutoSize = true;
+            telefonoLabel.Location = new System.Drawing.Point(26, 110);
+            telefonoLabel.Name = "telefonoLabel";
+            telefonoLabel.Size = new System.Drawing.Size(68, 17);
+            telefonoLabel.TabIndex = 5;
+            telefonoLabel.Text = "Telefono:";
             // 
-            // comprasDetalleBindingSource
+            // telefonoTextBox
             // 
-            this.comprasDetalleBindingSource.DataMember = "ComprasDetalle";
-            this.comprasDetalleBindingSource.DataSource = this.listadeComprasBindingSource;
+            this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listadeProveedoresBindingSource, "Telefono", true));
+            this.telefonoTextBox.Location = new System.Drawing.Point(100, 107);
+            this.telefonoTextBox.Name = "telefonoTextBox";
+            this.telefonoTextBox.Size = new System.Drawing.Size(100, 22);
+            this.telefonoTextBox.TabIndex = 6;
             // 
-            // listadeProductosBindingSource
+            // listadeProveedoresDataGridView
             // 
-            this.listadeProductosBindingSource.DataSource = typeof(ventas.Modelos.Productos);
-            // 
-            // listadeProveedoresBindingSource
-            // 
-            this.listadeProveedoresBindingSource.DataSource = typeof(ventas.Modelos.Proveedores);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listadeComprasBindingSource, "ProveedoresId", true));
-            this.comboBox1.DataSource = this.listadeProveedoresBindingSource;
-            this.comboBox1.DisplayMember = "Nombre";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(166, 85);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 24);
-            this.comboBox1.TabIndex = 16;
-            this.comboBox1.ValueMember = "Id";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comprasDetalleDataGridView
-            // 
-            this.comprasDetalleDataGridView.AutoGenerateColumns = false;
-            this.comprasDetalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.comprasDetalleDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.listadeProveedoresDataGridView.AutoGenerateColumns = false;
+            this.listadeProveedoresDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listadeProveedoresDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.Total});
-            this.comprasDetalleDataGridView.DataSource = this.comprasDetalleBindingSource;
-            this.comprasDetalleDataGridView.Location = new System.Drawing.Point(55, 193);
-            this.comprasDetalleDataGridView.Name = "comprasDetalleDataGridView";
-            this.comprasDetalleDataGridView.RowTemplate.Height = 24;
-            this.comprasDetalleDataGridView.Size = new System.Drawing.Size(651, 194);
-            this.comprasDetalleDataGridView.TabIndex = 16;
-            this.comprasDetalleDataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.comprasDetalleDataGridView_CellEndEdit);
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.listadeProveedoresDataGridView.DataSource = this.listadeProveedoresBindingSource;
+            this.listadeProveedoresDataGridView.Location = new System.Drawing.Point(194, 151);
+            this.listadeProveedoresDataGridView.Name = "listadeProveedoresDataGridView";
+            this.listadeProveedoresDataGridView.RowTemplate.Height = 24;
+            this.listadeProveedoresDataGridView.Size = new System.Drawing.Size(507, 220);
+            this.listadeProveedoresDataGridView.TabIndex = 7;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -376,71 +264,38 @@
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "InventarioId";
-            this.dataGridViewTextBoxColumn3.DataSource = this.listadeInventarioBindingSource;
-            this.dataGridViewTextBoxColumn3.DisplayMember = "Descripcion";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Inventario";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Telefono";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Telefono";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn3.ValueMember = "Id";
-            // 
-            // listadeInventarioBindingSource
-            // 
-            this.listadeInventarioBindingSource.DataSource = typeof(ventas.Modelos.Inventario);
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Cantidad";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Cantidad";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Costo";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Costo";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // Total
-            // 
-            this.Total.DataPropertyName = "Total";
-            this.Total.HeaderText = "Total";
-            this.Total.Name = "Total";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 561);
-            this.Controls.Add(this.comprasDetalleDataGridView);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(activoLabel);
-            this.Controls.Add(this.activoCheckBox);
-            this.Controls.Add(fechaLabel);
-            this.Controls.Add(this.fechaDateTimePicker);
+            this.ClientSize = new System.Drawing.Size(861, 449);
+            this.Controls.Add(this.listadeProveedoresDataGridView);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
-            this.Controls.Add(impuestoLabel);
-            this.Controls.Add(this.impuestoTextBox);
-            this.Controls.Add(proveedoresIdLabel);
-            this.Controls.Add(subtotalLabel);
-            this.Controls.Add(this.subtotalTextBox);
-            this.Controls.Add(totalLabel);
-            this.Controls.Add(this.totalTextBox);
-            this.Controls.Add(this.listadeComprasBindingNavigator);
+            this.Controls.Add(nombreLabel);
+            this.Controls.Add(this.nombreTextBox);
+            this.Controls.Add(telefonoLabel);
+            this.Controls.Add(this.telefonoTextBox);
+            this.Controls.Add(this.listadeProveedoresBindingNavigator);
             this.Name = "Form4";
-            this.Text = "Compras";
-            ((System.ComponentModel.ISupportInitialize)(this.listadeComprasBindingNavigator)).EndInit();
-            this.listadeComprasBindingNavigator.ResumeLayout(false);
-            this.listadeComprasBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeComprasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasDetalleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeProductosBindingSource)).EndInit();
+            this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comprasDetalleDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listadeInventarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresBindingNavigator)).EndInit();
+            this.listadeProveedoresBindingNavigator.ResumeLayout(false);
+            this.listadeProveedoresBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listadeProveedoresDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -448,8 +303,8 @@
 
         #endregion
 
-        private System.Windows.Forms.BindingSource listadeComprasBindingSource;
-        private System.Windows.Forms.BindingNavigator listadeComprasBindingNavigator;
+        private System.Windows.Forms.BindingSource listadeProveedoresBindingSource;
+        private System.Windows.Forms.BindingNavigator listadeProveedoresBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -461,25 +316,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton listadeComprasBindingNavigatorSaveItem;
-        private System.Windows.Forms.CheckBox activoCheckBox;
-        private System.Windows.Forms.DateTimePicker fechaDateTimePicker;
+        private System.Windows.Forms.ToolStripButton listadeProveedoresBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.TextBox impuestoTextBox;
-        private System.Windows.Forms.TextBox subtotalTextBox;
-        private System.Windows.Forms.TextBox totalTextBox;
-        private System.Windows.Forms.BindingSource comprasDetalleBindingSource;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.BindingSource listadeProductosBindingSource;
-        private System.Windows.Forms.BindingSource listadeProveedoresBindingSource;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView comprasDetalleDataGridView;
-        private System.Windows.Forms.BindingSource listadeInventarioBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.TextBox nombreTextBox;
+        private System.Windows.Forms.TextBox telefonoTextBox;
+        private System.Windows.Forms.DataGridView listadeProveedoresDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

@@ -16,7 +16,7 @@ namespace ventas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu2());
+            Application.Run(new Menu());
         }
     }
 }
