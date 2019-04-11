@@ -102,5 +102,13 @@ namespace ventas
 
             reportesToolStripMenuItem.Visible = login.UsuarioAutenticado.PuedeVerReportes;
         }
+
+        private void reporteDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReporteProductos = new FormReporteProductos();
+            formReporteProductos.MdiParent = this;
+
+            formReporteProductos.Show();
+        }
     }
 }
