@@ -15,6 +15,7 @@ namespace ventas.Modelos
         public string Ciudad { get; set; }
         public string Direccion { get; set; }
         public int CategoriaId { get; set; }
+        public byte[] Foto { get; set; }
         public Categoria Categoria { get; set; }
 
         public Cliente()

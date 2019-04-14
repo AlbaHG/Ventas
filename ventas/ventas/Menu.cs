@@ -106,9 +106,55 @@ namespace ventas
         private void reporteDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var formReporteProductos = new FormReporteProductos();
+            formReporteProductos.CargarDatos(_productosBL);
             formReporteProductos.MdiParent = this;
 
             formReporteProductos.Show();
+        }
+
+        private void totalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReportedeVentas = new FormReportedeVentas();
+            formReportedeVentas.CargarDatos(_facturaBL, _clientesBL);
+            formReportedeVentas.MdiParent = this;
+
+            formReportedeVentas.Show();
+        }
+
+        private void porClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReportedeVentas = new FormReportedeVentas();
+            formReportedeVentas.CargarDatos(_facturaBL, _clientesBL);
+            formReportedeVentas.MdiParent = this;
+
+            formReportedeVentas.Show();
+        }
+
+        private void reporteDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReportedeClientes = new FormReportedeClientes();
+            formReportedeClientes.CargarDatos(_clientesBL);
+            formReportedeClientes.MdiParent = this;
+
+            formReportedeClientes.Show();
+        }
+
+        private void reporteDeProveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReportedeProveedores = new FormReportedeProveedores();
+            formReportedeProveedores.CargarDatos(_proveedoresBL);
+            formReportedeProveedores.MdiParent = this;
+
+            formReportedeProveedores.Show();
+        }
+
+        private void reporteDeComprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formReportedeCompras = new FormReportedeCompras();
+            formReportedeCompras.CargarDatos(_comprasBL, _proveedoresBL);
+            formReportedeCompras.MdiParent = this;
+
+            formReportedeCompras.Show();
         }
     }
 }

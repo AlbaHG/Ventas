@@ -15,8 +15,10 @@ namespace ventas.Modelos
         public double Costo { get; set; }
         public int CategoriaId { get; set; }
         public Categoria Categoria { get; set; }
+        public byte[] Foto { get; set; }
+        public int Existencia { get; set; }
 
-         public Productos()
+        public Productos()
         {
             Categoria = new Categoria(1, "Laptops");
             CategoriaId = Categoria.Id;
@@ -30,6 +32,7 @@ namespace ventas.Modelos
             Costo = costo;
             Categoria = categoria;
             CategoriaId = categoria.Id;
+            //Existencia = existencia;
 
         }
     }
